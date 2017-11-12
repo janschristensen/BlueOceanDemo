@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Clone') {
       steps {
-        sh 'echo Hello World'
+        git(url: 'https://github.com/janschristensen/BlueOceanDemoRepo2.git', branch: 'master', credentialsId: 'jan')
       }
     }
   }
