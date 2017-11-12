@@ -5,6 +5,10 @@ pipeline {
       agent any
       steps {
         echo 'Hello clone'
+      }
+    }
+    stage('Shell') {
+      steps {
         sh 'echo "Hello from shell"'
       }
     }
