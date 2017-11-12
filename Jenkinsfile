@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'Hello clone'
+        sh 'echo "Hello from shell"'
       }
     }
   }
